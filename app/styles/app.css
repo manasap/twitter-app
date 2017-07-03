@@ -1,0 +1,217 @@
+/* General Styles */
+html {
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  background-color: #F5F8FA;
+}
+a {
+  color: #1DA1F2;
+  text-decoration: none;
+  font-size: 12px;
+}
+.clear{
+  clear:both;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+    font-size: 13px;
+    padding: 12px;
+}
+i.icon{
+  margin: 5px;
+  font-size:16px;
+}
+::-webkit-input-placeholder {
+  color: #AAB8C2;
+}
+hr{
+  height:0;
+  border:0;
+  border-top:1px solid #E1E8ED;
+}
+
+/* Styles for 2 column format */
+#main-container {
+  background-color: #1DA1F2;
+}
+#container {
+    width:960px;
+    margin: 20px auto;
+}
+#content {
+    width:920px;
+}
+#left-column {
+  width: 300px;
+  float: left;
+  margin: 10px;
+  padding:10px;
+}
+#right-column {
+  width: 570px;
+  float: left;
+  margin: 10px;
+  padding:10px;
+}
+
+/*styles for navigation header*/
+#header li{
+  padding: 14px 12px;
+}
+#header li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+#header li a:hover {
+    color: #efefef;
+}
+#header #nav {
+  float:left;
+  display:inline;
+}
+#header #nav-extras {
+  float:right;
+  display:inline-flex;
+}
+#header #nav-extras #nav-extras-icons{
+  color:#fff;
+  position:absolute;
+  top:22px;
+  right:190px;
+}
+#header .search-input{
+  background-color: #3C87BF;
+  border-radius: 21px;
+  border: 1px solid #3C87BF;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 48px 8px 12px;
+  transition: all .2s ease-in-out;
+  width: 100%;
+  margin-top:12px;
+}
+#header input.search-input::-webkit-input-placeholder {
+  color: #fff;
+}
+#header #icon-twitter{
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  margin-top:16px;
+  font-size:20px;
+  color:#fff;
+  cursor: pointer;
+}
+
+/*Styles for profile card*/
+.profile-card, .tweets-card, .footer-card{
+  border: 1px solid #E1E8ED;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #AAB8C2;
+  background-color: #ffffff;
+  margin-top:10px;
+}
+.profile-card ul li:not(:first-child){
+  border-left: 1px solid #E1E8ED;
+}
+.profile-card h3, .tweets-card h3{
+  margin:10px;
+  font-weight:normal;
+  font-size:16px;
+  color:#AAB8C2
+}
+.profile-card .profile-avatar img{
+  width:300px;
+  height:200px;
+}
+.profile-card .profile-stats .profile-stats-count{
+  color:#657786;
+}
+.profile-card .compose-tweets{
+  background-color: #F5F8FA;
+  border-top: 1px solid #E1E8ED;
+  overflow:auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.profile-card .tweet-input{
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #E1E8ED;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 48px 8px 12px;
+  transition: all .2s ease-in-out;
+  width: 80%;
+  margin:12px 30px;
+}
+
+/*styles for footer-card*/
+.footer-card{
+  font-size:12px;
+  padding:16px 10px;
+}
+.footer-card ul li a{
+  color: #AAB8C2;
+}
+.footer-card ul li{
+  padding:5px;
+}
+
+/*styles for trends-card*/
+.trend-item{
+  padding:5px 12px;
+  border-left:none;
+  float:none;
+}
+
+/*styles for trends-stream*/
+.tweets-card .tweets-stream{
+  margin-left:68px;
+}
+.tweets-card .tweets-stream li{
+  width:100%;
+}
+.tweets-header .tweets-image{
+  height:60px;
+  width: 60px;
+  float: left;
+  position:absolute;
+  margin-top: 3px;
+  margin-right: 10px;
+  margin-left: -68px;
+}
+.tweets-header .tweets-user-name{
+  color:#14171a;
+  font-size:14px;
+  font-weight:bold;
+}
+.tweets-header .tweets-screen-name{
+  color: #AAB8C2;
+  font-weight:normal;
+}
+.tweets-text{
+  color:#14171a;
+}
+.tweets-actions .icon{
+  color: #AAB8C2;
+}

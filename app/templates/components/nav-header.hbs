@@ -1,0 +1,37 @@
+<div id="header">
+  <h1 class="icon fa fa-twitter" id="icon-twitter"> </h1>
+  <div id="nav">
+      <ul class="list">
+          {{#link-to 'index' tagName="li"}}
+          <a href="#"><i class="icon fa fa-home"></i>Home</a>
+          {{/link-to}}
+          {{#link-to 'index' tagName="li"}}
+          <a href="#"><i class="icon fa fa-at"></i>Connect</a>
+          {{/link-to}}
+          {{#link-to 'index' tagName="li"}}
+          <a href="#"><i class="icon fa fa-hashtag"></i>Discover</a>
+          {{/link-to}}
+          {{#link-to 'index' tagName="li"}}
+          <a href="#"><i class="icon fa fa-user"></i>Me</a>
+          {{/link-to}}
+      </ul>
+  </div>
+  <div id="nav-extras">
+    <div role="search">
+    {{input class="search-input" type="text" id="search-query" placeholder="Search"}}
+    <i class="icon fa fa-search" id="nav-extras-icons"></i>
+  </div>
+
+    <ul class="list">
+      {{#link-to 'index' tagName="li"}}
+      <a href="#"><i class="icon fa fa-envelope pull-right"></i></a>
+      {{/link-to}}
+      {{#link-to 'index' tagName="li"}}
+      <a href="#"><i class="icon fa fa-gear pull-right"></i></a>
+      {{/link-to}}
+      {{#link-to 'index' tagName="li"}}
+      <a href="#"><i class="icon fa fa-retweet pull-right"></i></a>
+      {{/link-to}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="profile-card">
+  <div class="profile-avatar">
+    <img src="{{user.profile_image_url}}">
+  </div>
+  <div class="profile-stats">
+    <ul class="list">
+      <li>
+        <div class="profile-stats-title">TWEETS</div>
+        <div class="profile-stats-count">{{user.statuses_count}}</div>
+      </li>
+      <li>
+        <div class="profile-stats-title">FOLLOWING</div>
+        <div class="profile-stats-count">{{user.friends_count}}</div>
+      </li>
+      <li>
+        <div class="profile-stats-title">FOLLOWERS</div>
+        <div class="profile-stats-count">{{user.followers_count}}</div>
+      </li>
+    </ul>
+  </div>
+  <div class="compose-tweets">
+    {{input class="tweet-input"
+      value=text type="text"
+      action="saveTweet"
+      on="enter"
+      placeholder="Compose new tweet..."}}
+  </div>
+</div>

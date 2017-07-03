@@ -1,5 +1,24 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div id="main-container">
+  {{nav-header}}
+  <div id="container" class="clear">
+    <div id="left-column">
+    {{user-card user=user timeline=timeline store=store}}
+    {{trends-card}}
+    {{footer-card}}
+    </div>
+    <div id="right-column">
+      <div class="tweets-card">
+        <h3>Tweets</h3>
+        <hr/>
+        <div class="tweets-stream">
+          <ul>
+            {{#each timeline as |tweet|}}
+              <li>{{tweet-stream-item tweet=tweet}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      {{outlet}}
+    </div>
+  </div>
+</div>
