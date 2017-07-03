@@ -1,7 +1,8 @@
 # twitter-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+It is a UI application in ember which displays timeline of atlas two different users - twittedev and twittermktg. Clicking on the name of any tweet should navigate to the corresponding user timeline and Url for accessing the timeline per user is - /user/twitterdev and /user/twittermktg. Data is read from static JSON files and the api calls are mocked using express.js to modify the content of JSON files.
+[Link to Screen Recording](https://github.com/manasap/twitter-app/blob/master/twitter-app-screen-recording.mov)
+[Link to Screenshot](https://github.com/manasap/twitter-app/blob/master/twitter-app.png)
 
 ## Prerequisites
 
